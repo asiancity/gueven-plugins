@@ -115,7 +115,7 @@ if(!class_exists('RS_Shortcode')) {
     require_once(RS_ROOT. '/' . 'shortcodes/vc_column.php');
     require_once(RS_ROOT. '/' . 'shortcodes/vc_column_text.php');
     require_once(RS_ROOT. '/' . 'shortcodes/vc_row.php');
-
+    require_once(RS_ROOT. '/' . 'shortcodes/rs_contact_address.php');
 
   }
 

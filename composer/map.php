@@ -1672,6 +1672,20 @@ if ( is_plugin_active( 'wysija-newsletters/index.php' ) ) {
     )
   ) );
 }
+// ==========================================================================================
+// Contact Page Address
+// ==========================================================================================
+vc_map( array(
+  'name'            => 'Contact Address',
+  'base'            => 'rs_contact_address',
+  'icon'            => 'fa fa-paw',
+  'description'     => 'Contact Page',
+  'params'          => array(
+    // Extras
+    $vc_map_extra_id,
+    $vc_map_extra_class,
+  )
+) );
 
 
 require_once vc_path_dir( 'SHORTCODES_DIR', 'vc-tab.php' );
