@@ -1,5 +1,4 @@
 <?php
-require('charts.php');
 add_action('admin_head', 'ath_admin_css');
 
 function ath_admin_css() {
