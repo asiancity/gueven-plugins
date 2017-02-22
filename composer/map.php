@@ -528,9 +528,9 @@ vc_map( array(
       'param_name'  => 'style',
       'admin_label' => true,
       'value'       => array(
-        '1' => 'style 1',
-        '2' => 'style 2',
-        '3' => 'style 3',
+        '1' => '1',
+        '2' => '2',
+        '3' => '3',
       )
     ),
 
