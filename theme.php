@@ -81,12 +81,12 @@ if(!class_exists('RS_Shortcode')) {
     public function rs_init_vc() {
       global $vc_manager;
       $vc_manager->setIsAsTheme();
-      $vc_manager->disableUpdater();
+      // $vc_manager->disableUpdater();
       $list = array( 'page', 'post', 'portfolio', 'special-content' );
       $vc_manager->setEditorDefaultPostTypes( $list );
       $vc_manager->setEditorPostTypes( $list ); //this is required after VC update (probably from vc 4.5 version)
-      //$vc_manager->frontendEditor()->disableInline(); // enable/disable vc frontend editior
-      $vc_manager->automapper()->setDisabled();
+      // $vc_manager->frontendEditor()->disableInline(); // enable/disable vc frontend editior
+      // $vc_manager->automapper()->setDisabled();
     }
 
   public function rs_vc_load_shortcodes() {

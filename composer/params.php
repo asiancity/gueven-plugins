@@ -49,6 +49,4 @@ function vc_icon($settings, $value) {
 
   return $output;
 }
-
-
 vc_add_shortcode_param('vc_icon', 'vc_icon');
