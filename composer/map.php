@@ -640,51 +640,6 @@ vc_map( array(
 ) );
 
 
-if ( is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) ) {
-
-  global $wpdb;
-
-  $db_cf7froms  = $wpdb->get_results("SELECT ID, post_title FROM $wpdb->posts WHERE post_type = 'wpcf7_contact_form'");
-  $cf7_forms    = array();
-
-  if ( $db_cf7froms ) {
-
-    foreach ( $db_cf7froms as $cform ) {
-      $cf7_forms[$cform->post_title] = $cform->ID;
-    }
-
-  } else {
-    $cf7_forms['No contact forms found'] = 0;
-  }
-
-// ==========================================================================================
-// Contact Form
-// ==========================================================================================
-
-  vc_map( array(
-  'name'            => 'Contact Form',
-  'base'            => 'rs_contact_form',
-  'icon'            => 'fa fa-envelope ',
-  'description'     => 'Contact Form 7',
-  'params'          => array(
-    array(
-      'type'        => 'dropdown',
-      'heading'     => 'Contact Form',
-      'param_name'  => 'form_id',
-      'value'       => $cf7_forms,
-      'admin_label' => true,
-      'description' => 'Choose previously created contact form from the drop down list.',
-    ),
-
-    $vc_map_extra_id,
-    $vc_map_extra_class,
-  )
-
-) );
-
-
-}
-
 // ==========================================================================================
 // Blog News
 // ==========================================================================================
