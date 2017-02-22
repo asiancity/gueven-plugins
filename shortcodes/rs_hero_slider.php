@@ -8,8 +8,8 @@
  *
  */
 function rs_hero_slider( $atts, $content = '', $id = '' ) {
-  wp_enqueue_script('adios-swiper');
-  wp_enqueue_style('adios-swiper');
+  wp_enqueue_script('rs-swiper');
+  wp_enqueue_style('rs-swiper');
   global $rs_hero_slider;
   $rs_hero_slider = array();
 
