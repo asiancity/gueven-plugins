@@ -9,6 +9,8 @@
 function rs_google_map( $atts, $content = '', $id = '' ) {
   wp_enqueue_script('rs-gmapsensor');
   wp_enqueue_script('rs-cd-google-map');
+  wp_enqueue_script('rs-google-handle');
+
   extract( shortcode_atts( array(
     'id'        => '',
     'class'     => '',
