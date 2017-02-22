@@ -1714,7 +1714,7 @@ function vc_remove_elements( $e = array() ) {
 
 $s_elemets = array( 'icon', 'masonry_media_grid', 'masonry_grid', 'basic_grid', 'media_grid', 'custom_heading', 'empty_space', 'clients', 'widget_sidebar', 'images_carousel', 'carousel', 'tour', 'gallery', 'posts_slider', 'posts_grid', 'teaser_grid', 'separator', 'text_separator', 'message', 'facebook', 'tweetmeme', 'googleplus', 'pinterest', 'single_image', 'button', 'button2', 'cta_button', 'cta_button2', 'video', 'gmaps', 'flickr', 'progress_bar', 'raw_js', 'pie', 'wp_meta', 'wp_recentcomments', 'wp_text', 'wp_calendar', 'wp_pages', 'wp_custommenu', 'wp_posts', 'wp_links', 'wp_categories', 'wp_archives', 'wp_rss' );
 vc_remove_elements( $s_elemets );
-$els = array('vc_tta_tour', 'vc_line_chart', 'vc_round_chart', 'client', 'testimonial', 'contact-form-7', 'vc_cta', 'vc_toggle', 'vc_section', 'vc_raw_html');
+$els = array('vc_tta_tour', 'vc_line_chart', 'vc_round_chart', 'client', 'testimonial', 'vc_cta', 'vc_toggle', 'vc_section', 'vc_raw_html');
 foreach( $els as $el ){
   vc_remove_element($el);
 }
