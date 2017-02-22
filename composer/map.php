@@ -516,6 +516,23 @@ vc_map( array(
       'param_name'  => 'zoom_size',
       'admin_label' => true
     ),
+    array(
+      'type'        => 'textfield',
+      'heading'     => 'Height',
+      'param_name'  => 'height',
+      'admin_label' => true
+    ),
+    array(
+      'type'        => 'dropdown',
+      'heading'     => 'Style',
+      'param_name'  => 'style',
+      'admin_label' => true,
+      'value'       => array(
+        '1' => 'style 1',
+        '2' => 'style 2',
+        '3' => 'style 3',
+      )
+    ),
 
     // Extras
     $vc_map_extra_id,
